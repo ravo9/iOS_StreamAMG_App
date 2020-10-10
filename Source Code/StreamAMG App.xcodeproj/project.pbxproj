@@ -13,6 +13,12 @@
 		99314D1025305F26001F6336 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99314D0F25305F26001F6336 /* Preview Assets.xcassets */; };
 		99314D1B25305F27001F6336 /* StreamAMG_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D1A25305F27001F6336 /* StreamAMG_AppTests.swift */; };
 		99314D2625305F27001F6336 /* StreamAMG_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D2525305F27001F6336 /* StreamAMG_AppUITests.swift */; };
+		99314D3D25309E9F001F6336 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D3C25309E9F001F6336 /* Video.swift */; };
+		99314D452530A353001F6336 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D442530A353001F6336 /* Section.swift */; };
+		99314D4A2530A4B7001F6336 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D492530A4B7001F6336 /* FeedViewModel.swift */; };
+		99314D5325323BEF001F6336 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D5225323BEF001F6336 /* ApiClient.swift */; };
+		99314D5B25323CC2001F6336 /* GetVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D5A25323CC2001F6336 /* GetVideosResponse.swift */; };
+		99314D6025324080001F6336 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D5F25324080001F6336 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		99314D2125305F27001F6336 /* StreamAMG AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamAMG AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99314D2525305F27001F6336 /* StreamAMG_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppUITests.swift; sourceTree = "<group>"; };
 		99314D2725305F27001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99314D3C25309E9F001F6336 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		99314D442530A353001F6336 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		99314D492530A4B7001F6336 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		99314D5225323BEF001F6336 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		99314D5A25323CC2001F6336 /* GetVideosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVideosResponse.swift; sourceTree = "<group>"; };
+		99314D5F25324080001F6336 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,10 @@
 		99314D0725305F24001F6336 /* StreamAMG App */ = {
 			isa = PBXGroup;
 			children = (
+				99314D5125323BE3001F6336 /* Network */,
+				99314D3B25309A39001F6336 /* ViewModels */,
+				99314D3A25309A34001F6336 /* Models */,
+				99314D3925309A11001F6336 /* ViewControllers */,
 				99314D0825305F24001F6336 /* StreamAMG_AppApp.swift */,
 				99314D0A25305F24001F6336 /* ContentView.swift */,
 				99314D0C25305F26001F6336 /* Assets.xcassets */,
@@ -128,6 +144,40 @@
 				99314D2725305F27001F6336 /* Info.plist */,
 			);
 			path = "StreamAMG AppUITests";
+			sourceTree = "<group>";
+		};
+		99314D3925309A11001F6336 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				99314D5F25324080001F6336 /* FeedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		99314D3A25309A34001F6336 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99314D3C25309E9F001F6336 /* Video.swift */,
+				99314D442530A353001F6336 /* Section.swift */,
+				99314D5A25323CC2001F6336 /* GetVideosResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99314D3B25309A39001F6336 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				99314D492530A4B7001F6336 /* FeedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		99314D5125323BE3001F6336 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				99314D5225323BEF001F6336 /* ApiClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99314D4A2530A4B7001F6336 /* FeedViewModel.swift in Sources */,
 				99314D0B25305F24001F6336 /* ContentView.swift in Sources */,
+				99314D452530A353001F6336 /* Section.swift in Sources */,
+				99314D3D25309E9F001F6336 /* Video.swift in Sources */,
 				99314D0925305F24001F6336 /* StreamAMG_AppApp.swift in Sources */,
+				99314D5B25323CC2001F6336 /* GetVideosResponse.swift in Sources */,
+				99314D6025324080001F6336 /* FeedViewController.swift in Sources */,
+				99314D5325323BEF001F6336 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
