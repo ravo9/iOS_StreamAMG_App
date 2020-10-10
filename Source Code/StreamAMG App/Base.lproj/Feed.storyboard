@@ -15,13 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6SW-DM-u9f" userLabel="Video Table View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoTableViewCell" rowHeight="70" id="kz0-Kz-c7W" userLabel="VideoTableViewCell" customClass="VideoTableViewCell" customModule="StreamAMG_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kz0-Kz-c7W" id="CX4-Fj-TMM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlz-Z9-vpZ" userLabel="Video Title Label">
+                                                    <rect key="frame" x="25" y="25" width="364" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9Em-e6-gR1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rlz-Z9-vpZ" firstAttribute="top" secondItem="CX4-Fj-TMM" secondAttribute="topMargin" constant="14" id="8dG-xa-9Td"/>
+                                                <constraint firstItem="Rlz-Z9-vpZ" firstAttribute="leading" secondItem="CX4-Fj-TMM" secondAttribute="leadingMargin" constant="5" id="GEx-XD-M3H"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rlz-Z9-vpZ" secondAttribute="bottom" constant="13" id="WgP-Va-g63"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rlz-Z9-vpZ" secondAttribute="trailing" constant="5" id="iQo-iq-z1D"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoTitle" destination="Rlz-Z9-vpZ" id="obl-W1-Kb2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6SW-DM-u9f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2VY-od-CXB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6SW-DM-u9f" secondAttribute="trailing" id="HGO-nF-uKj"/>
+                            <constraint firstItem="6SW-DM-u9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HjJ-un-g7B"/>
+                            <constraint firstItem="6SW-DM-u9f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ocl-kC-Kuu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoTableView" destination="6SW-DM-u9f" id="jKs-OQ-JWc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="70"/>
+            <point key="canvasLocation" x="40.579710144927539" y="115.17857142857142"/>
         </scene>
     </scenes>
     <resources>

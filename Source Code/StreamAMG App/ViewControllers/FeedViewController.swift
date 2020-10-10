@@ -14,7 +14,7 @@ class FeedViewController: UIViewController {
     
     private var feedViewModel : FeedViewModel!
     
-//    private var dataSource : VideoTableViewDataSource<VideoTableViewCell, VideoData>!
+    private var dataSource : VideoTableViewDataSource<VideoTableViewCell, Video>!
     
 
     override func viewDidLoad() {
@@ -32,15 +32,14 @@ class FeedViewController: UIViewController {
     
     func updateDataSource(){
         
-//        self.dataSource = VideoTableViewDataSource(cellIdentifier: "VideoTableViewCell", items: self.feedViewModel.empData.data, configureCell: { (cell, evm) in
-//            cell.employeeIdLabel.text = evm.id
-//            cell.employeeNameLabel.text = evm.employeeName
-//        })
-//        
-//        DispatchQueue.main.async {
-//            self.videoTableView.dataSource = self.dataSource
-//            self.videoTableView.reloadData()
-//        }
+        self.dataSource = VideoTableViewDataSource(cellIdentifier: "VideoTableViewCell", items: self.feedViewModel.videosData[0].itemData, configureCell: { (cell, video) in
+            cell.videoTitle.text = video.metaData.title
+        })
+        
+        DispatchQueue.main.async {
+            self.videoTableView.dataSource = self.dataSource
+            self.videoTableView.reloadData()
+        }
     }
     
 }
