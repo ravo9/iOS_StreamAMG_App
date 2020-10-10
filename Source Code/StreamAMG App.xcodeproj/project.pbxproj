@@ -7,74 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99314D0925305F24001F6336 /* StreamAMG_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D0825305F24001F6336 /* StreamAMG_AppApp.swift */; };
-		99314D0B25305F24001F6336 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D0A25305F24001F6336 /* ContentView.swift */; };
-		99314D0D25305F26001F6336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99314D0C25305F26001F6336 /* Assets.xcassets */; };
-		99314D1025305F26001F6336 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99314D0F25305F26001F6336 /* Preview Assets.xcassets */; };
-		99314D1B25305F27001F6336 /* StreamAMG_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D1A25305F27001F6336 /* StreamAMG_AppTests.swift */; };
-		99314D2625305F27001F6336 /* StreamAMG_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D2525305F27001F6336 /* StreamAMG_AppUITests.swift */; };
-		99314D3D25309E9F001F6336 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D3C25309E9F001F6336 /* Video.swift */; };
-		99314D452530A353001F6336 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D442530A353001F6336 /* Section.swift */; };
-		99314D4A2530A4B7001F6336 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D492530A4B7001F6336 /* FeedViewModel.swift */; };
-		99314D5325323BEF001F6336 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D5225323BEF001F6336 /* ApiClient.swift */; };
-		99314D5B25323CC2001F6336 /* GetVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D5A25323CC2001F6336 /* GetVideosResponse.swift */; };
-		99314D6025324080001F6336 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314D5F25324080001F6336 /* FeedViewController.swift */; };
+		99314DB025324699001F6336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DAF25324699001F6336 /* AppDelegate.swift */; };
+		99314DB225324699001F6336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DB125324699001F6336 /* SceneDelegate.swift */; };
+		99314DB725324699001F6336 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99314DB525324699001F6336 /* Feed.storyboard */; };
+		99314DB92532469B001F6336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99314DB82532469B001F6336 /* Assets.xcassets */; };
+		99314DBC2532469B001F6336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99314DBA2532469B001F6336 /* LaunchScreen.storyboard */; };
+		99314DC72532469B001F6336 /* StreamAMG_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DC62532469B001F6336 /* StreamAMG_AppTests.swift */; };
+		99314DD22532469B001F6336 /* StreamAMG_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DD12532469B001F6336 /* StreamAMG_AppUITests.swift */; };
+		99314DF42532488E001F6336 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DF32532488E001F6336 /* ApiClient.swift */; };
+		99314DFC253248B5001F6336 /* GetVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DF9253248B5001F6336 /* GetVideosResponse.swift */; };
+		99314DFD253248B5001F6336 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DFA253248B5001F6336 /* Section.swift */; };
+		99314DFE253248B5001F6336 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DFB253248B5001F6336 /* Video.swift */; };
+		99314E06253248C4001F6336 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314E03253248C4001F6336 /* FeedViewModel.swift */; };
+		99314E07253248C4001F6336 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314E05253248C4001F6336 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		99314D1725305F26001F6336 /* PBXContainerItemProxy */ = {
+		99314DC32532469B001F6336 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 99314CFD25305F24001F6336 /* Project object */;
+			containerPortal = 99314DA425324699001F6336 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 99314D0425305F24001F6336;
+			remoteGlobalIDString = 99314DAB25324699001F6336;
 			remoteInfo = "StreamAMG App";
 		};
-		99314D2225305F27001F6336 /* PBXContainerItemProxy */ = {
+		99314DCE2532469B001F6336 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 99314CFD25305F24001F6336 /* Project object */;
+			containerPortal = 99314DA425324699001F6336 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 99314D0425305F24001F6336;
+			remoteGlobalIDString = 99314DAB25324699001F6336;
 			remoteInfo = "StreamAMG App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		99314D0525305F24001F6336 /* StreamAMG App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamAMG App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99314D0825305F24001F6336 /* StreamAMG_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppApp.swift; sourceTree = "<group>"; };
-		99314D0A25305F24001F6336 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		99314D0C25305F26001F6336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		99314D0F25305F26001F6336 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		99314D1125305F26001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99314D1625305F26001F6336 /* StreamAMG AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamAMG AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99314D1A25305F27001F6336 /* StreamAMG_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppTests.swift; sourceTree = "<group>"; };
-		99314D1C25305F27001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99314D2125305F27001F6336 /* StreamAMG AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamAMG AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99314D2525305F27001F6336 /* StreamAMG_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppUITests.swift; sourceTree = "<group>"; };
-		99314D2725305F27001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99314D3C25309E9F001F6336 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		99314D442530A353001F6336 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		99314D492530A4B7001F6336 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
-		99314D5225323BEF001F6336 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		99314D5A25323CC2001F6336 /* GetVideosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVideosResponse.swift; sourceTree = "<group>"; };
-		99314D5F25324080001F6336 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		99314DAC25324699001F6336 /* StreamAMG App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamAMG App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99314DAF25324699001F6336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99314DB125324699001F6336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99314DB625324699001F6336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
+		99314DB82532469B001F6336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99314DBB2532469B001F6336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99314DBD2532469B001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99314DC22532469B001F6336 /* StreamAMG AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamAMG AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99314DC62532469B001F6336 /* StreamAMG_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppTests.swift; sourceTree = "<group>"; };
+		99314DC82532469B001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99314DCD2532469B001F6336 /* StreamAMG AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamAMG AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99314DD12532469B001F6336 /* StreamAMG_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppUITests.swift; sourceTree = "<group>"; };
+		99314DD32532469B001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99314DF32532488E001F6336 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		99314DF9253248B5001F6336 /* GetVideosResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetVideosResponse.swift; sourceTree = "<group>"; };
+		99314DFA253248B5001F6336 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		99314DFB253248B5001F6336 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		99314E03253248C4001F6336 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		99314E05253248C4001F6336 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		99314D0225305F24001F6336 /* Frameworks */ = {
+		99314DA925324699001F6336 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99314D1325305F26001F6336 /* Frameworks */ = {
+		99314DBF2532469B001F6336 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99314D1E25305F27001F6336 /* Frameworks */ = {
+		99314DCA2532469B001F6336 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,112 +86,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		99314CFC25305F24001F6336 = {
+		99314DA325324699001F6336 = {
 			isa = PBXGroup;
 			children = (
-				99314D0725305F24001F6336 /* StreamAMG App */,
-				99314D1925305F27001F6336 /* StreamAMG AppTests */,
-				99314D2425305F27001F6336 /* StreamAMG AppUITests */,
-				99314D0625305F24001F6336 /* Products */,
+				99314DAE25324699001F6336 /* StreamAMG App */,
+				99314DC52532469B001F6336 /* StreamAMG AppTests */,
+				99314DD02532469B001F6336 /* StreamAMG AppUITests */,
+				99314DAD25324699001F6336 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		99314D0625305F24001F6336 /* Products */ = {
+		99314DAD25324699001F6336 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99314D0525305F24001F6336 /* StreamAMG App.app */,
-				99314D1625305F26001F6336 /* StreamAMG AppTests.xctest */,
-				99314D2125305F27001F6336 /* StreamAMG AppUITests.xctest */,
+				99314DAC25324699001F6336 /* StreamAMG App.app */,
+				99314DC22532469B001F6336 /* StreamAMG AppTests.xctest */,
+				99314DCD2532469B001F6336 /* StreamAMG AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99314D0725305F24001F6336 /* StreamAMG App */ = {
+		99314DAE25324699001F6336 /* StreamAMG App */ = {
 			isa = PBXGroup;
 			children = (
-				99314D5125323BE3001F6336 /* Network */,
-				99314D3B25309A39001F6336 /* ViewModels */,
-				99314D3A25309A34001F6336 /* Models */,
-				99314D3925309A11001F6336 /* ViewControllers */,
-				99314D0825305F24001F6336 /* StreamAMG_AppApp.swift */,
-				99314D0A25305F24001F6336 /* ContentView.swift */,
-				99314D0C25305F26001F6336 /* Assets.xcassets */,
-				99314D1125305F26001F6336 /* Info.plist */,
-				99314D0E25305F26001F6336 /* Preview Content */,
+				99314E04253248C4001F6336 /* ViewControllers */,
+				99314E02253248C4001F6336 /* ViewModels */,
+				99314DF8253248B5001F6336 /* Models */,
+				99314DF22532488E001F6336 /* Network */,
+				99314DAF25324699001F6336 /* AppDelegate.swift */,
+				99314DB125324699001F6336 /* SceneDelegate.swift */,
+				99314DB525324699001F6336 /* Feed.storyboard */,
+				99314DB82532469B001F6336 /* Assets.xcassets */,
+				99314DBA2532469B001F6336 /* LaunchScreen.storyboard */,
+				99314DBD2532469B001F6336 /* Info.plist */,
 			);
 			path = "StreamAMG App";
 			sourceTree = "<group>";
 		};
-		99314D0E25305F26001F6336 /* Preview Content */ = {
+		99314DC52532469B001F6336 /* StreamAMG AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				99314D0F25305F26001F6336 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		99314D1925305F27001F6336 /* StreamAMG AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				99314D1A25305F27001F6336 /* StreamAMG_AppTests.swift */,
-				99314D1C25305F27001F6336 /* Info.plist */,
+				99314DC62532469B001F6336 /* StreamAMG_AppTests.swift */,
+				99314DC82532469B001F6336 /* Info.plist */,
 			);
 			path = "StreamAMG AppTests";
 			sourceTree = "<group>";
 		};
-		99314D2425305F27001F6336 /* StreamAMG AppUITests */ = {
+		99314DD02532469B001F6336 /* StreamAMG AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				99314D2525305F27001F6336 /* StreamAMG_AppUITests.swift */,
-				99314D2725305F27001F6336 /* Info.plist */,
+				99314DD12532469B001F6336 /* StreamAMG_AppUITests.swift */,
+				99314DD32532469B001F6336 /* Info.plist */,
 			);
 			path = "StreamAMG AppUITests";
 			sourceTree = "<group>";
 		};
-		99314D3925309A11001F6336 /* ViewControllers */ = {
+		99314DF22532488E001F6336 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				99314D5F25324080001F6336 /* FeedViewController.swift */,
+				99314DF32532488E001F6336 /* ApiClient.swift */,
 			);
-			path = ViewControllers;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		99314D3A25309A34001F6336 /* Models */ = {
+		99314DF8253248B5001F6336 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				99314D3C25309E9F001F6336 /* Video.swift */,
-				99314D442530A353001F6336 /* Section.swift */,
-				99314D5A25323CC2001F6336 /* GetVideosResponse.swift */,
+				99314DF9253248B5001F6336 /* GetVideosResponse.swift */,
+				99314DFA253248B5001F6336 /* Section.swift */,
+				99314DFB253248B5001F6336 /* Video.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		99314D3B25309A39001F6336 /* ViewModels */ = {
+		99314E02253248C4001F6336 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				99314D492530A4B7001F6336 /* FeedViewModel.swift */,
+				99314E03253248C4001F6336 /* FeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		99314D5125323BE3001F6336 /* Network */ = {
+		99314E04253248C4001F6336 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				99314D5225323BEF001F6336 /* ApiClient.swift */,
+				99314E05253248C4001F6336 /* FeedViewController.swift */,
 			);
-			path = Network;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		99314D0425305F24001F6336 /* StreamAMG App */ = {
+		99314DAB25324699001F6336 /* StreamAMG App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99314D2A25305F27001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG App" */;
+			buildConfigurationList = 99314DD62532469B001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG App" */;
 			buildPhases = (
-				99314D0125305F24001F6336 /* Sources */,
-				99314D0225305F24001F6336 /* Frameworks */,
-				99314D0325305F24001F6336 /* Resources */,
+				99314DA825324699001F6336 /* Sources */,
+				99314DA925324699001F6336 /* Frameworks */,
+				99314DAA25324699001F6336 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -197,68 +192,68 @@
 			);
 			name = "StreamAMG App";
 			productName = "StreamAMG App";
-			productReference = 99314D0525305F24001F6336 /* StreamAMG App.app */;
+			productReference = 99314DAC25324699001F6336 /* StreamAMG App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		99314D1525305F26001F6336 /* StreamAMG AppTests */ = {
+		99314DC12532469B001F6336 /* StreamAMG AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99314D2D25305F27001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppTests" */;
+			buildConfigurationList = 99314DD92532469B001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppTests" */;
 			buildPhases = (
-				99314D1225305F26001F6336 /* Sources */,
-				99314D1325305F26001F6336 /* Frameworks */,
-				99314D1425305F26001F6336 /* Resources */,
+				99314DBE2532469B001F6336 /* Sources */,
+				99314DBF2532469B001F6336 /* Frameworks */,
+				99314DC02532469B001F6336 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				99314D1825305F26001F6336 /* PBXTargetDependency */,
+				99314DC42532469B001F6336 /* PBXTargetDependency */,
 			);
 			name = "StreamAMG AppTests";
 			productName = "StreamAMG AppTests";
-			productReference = 99314D1625305F26001F6336 /* StreamAMG AppTests.xctest */;
+			productReference = 99314DC22532469B001F6336 /* StreamAMG AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		99314D2025305F27001F6336 /* StreamAMG AppUITests */ = {
+		99314DCC2532469B001F6336 /* StreamAMG AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99314D3025305F27001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppUITests" */;
+			buildConfigurationList = 99314DDC2532469B001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppUITests" */;
 			buildPhases = (
-				99314D1D25305F27001F6336 /* Sources */,
-				99314D1E25305F27001F6336 /* Frameworks */,
-				99314D1F25305F27001F6336 /* Resources */,
+				99314DC92532469B001F6336 /* Sources */,
+				99314DCA2532469B001F6336 /* Frameworks */,
+				99314DCB2532469B001F6336 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				99314D2325305F27001F6336 /* PBXTargetDependency */,
+				99314DCF2532469B001F6336 /* PBXTargetDependency */,
 			);
 			name = "StreamAMG AppUITests";
 			productName = "StreamAMG AppUITests";
-			productReference = 99314D2125305F27001F6336 /* StreamAMG AppUITests.xctest */;
+			productReference = 99314DCD2532469B001F6336 /* StreamAMG AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		99314CFD25305F24001F6336 /* Project object */ = {
+		99314DA425324699001F6336 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					99314D0425305F24001F6336 = {
+					99314DAB25324699001F6336 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
-					99314D1525305F26001F6336 = {
+					99314DC12532469B001F6336 = {
 						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 99314D0425305F24001F6336;
+						TestTargetID = 99314DAB25324699001F6336;
 					};
-					99314D2025305F27001F6336 = {
+					99314DCC2532469B001F6336 = {
 						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 99314D0425305F24001F6336;
+						TestTargetID = 99314DAB25324699001F6336;
 					};
 				};
 			};
-			buildConfigurationList = 99314D0025305F24001F6336 /* Build configuration list for PBXProject "StreamAMG App" */;
+			buildConfigurationList = 99314DA725324699001F6336 /* Build configuration list for PBXProject "StreamAMG App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -266,36 +261,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 99314CFC25305F24001F6336;
-			productRefGroup = 99314D0625305F24001F6336 /* Products */;
+			mainGroup = 99314DA325324699001F6336;
+			productRefGroup = 99314DAD25324699001F6336 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99314D0425305F24001F6336 /* StreamAMG App */,
-				99314D1525305F26001F6336 /* StreamAMG AppTests */,
-				99314D2025305F27001F6336 /* StreamAMG AppUITests */,
+				99314DAB25324699001F6336 /* StreamAMG App */,
+				99314DC12532469B001F6336 /* StreamAMG AppTests */,
+				99314DCC2532469B001F6336 /* StreamAMG AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		99314D0325305F24001F6336 /* Resources */ = {
+		99314DAA25324699001F6336 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99314D1025305F26001F6336 /* Preview Assets.xcassets in Resources */,
-				99314D0D25305F26001F6336 /* Assets.xcassets in Resources */,
+				99314DBC2532469B001F6336 /* LaunchScreen.storyboard in Resources */,
+				99314DB92532469B001F6336 /* Assets.xcassets in Resources */,
+				99314DB725324699001F6336 /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99314D1425305F26001F6336 /* Resources */ = {
+		99314DC02532469B001F6336 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99314D1F25305F27001F6336 /* Resources */ = {
+		99314DCB2532469B001F6336 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,54 +301,73 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		99314D0125305F24001F6336 /* Sources */ = {
+		99314DA825324699001F6336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99314D4A2530A4B7001F6336 /* FeedViewModel.swift in Sources */,
-				99314D0B25305F24001F6336 /* ContentView.swift in Sources */,
-				99314D452530A353001F6336 /* Section.swift in Sources */,
-				99314D3D25309E9F001F6336 /* Video.swift in Sources */,
-				99314D0925305F24001F6336 /* StreamAMG_AppApp.swift in Sources */,
-				99314D5B25323CC2001F6336 /* GetVideosResponse.swift in Sources */,
-				99314D6025324080001F6336 /* FeedViewController.swift in Sources */,
-				99314D5325323BEF001F6336 /* ApiClient.swift in Sources */,
+				99314E07253248C4001F6336 /* FeedViewController.swift in Sources */,
+				99314DB025324699001F6336 /* AppDelegate.swift in Sources */,
+				99314DB225324699001F6336 /* SceneDelegate.swift in Sources */,
+				99314DFD253248B5001F6336 /* Section.swift in Sources */,
+				99314DF42532488E001F6336 /* ApiClient.swift in Sources */,
+				99314DFE253248B5001F6336 /* Video.swift in Sources */,
+				99314E06253248C4001F6336 /* FeedViewModel.swift in Sources */,
+				99314DFC253248B5001F6336 /* GetVideosResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99314D1225305F26001F6336 /* Sources */ = {
+		99314DBE2532469B001F6336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99314D1B25305F27001F6336 /* StreamAMG_AppTests.swift in Sources */,
+				99314DC72532469B001F6336 /* StreamAMG_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99314D1D25305F27001F6336 /* Sources */ = {
+		99314DC92532469B001F6336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99314D2625305F27001F6336 /* StreamAMG_AppUITests.swift in Sources */,
+				99314DD22532469B001F6336 /* StreamAMG_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		99314D1825305F26001F6336 /* PBXTargetDependency */ = {
+		99314DC42532469B001F6336 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 99314D0425305F24001F6336 /* StreamAMG App */;
-			targetProxy = 99314D1725305F26001F6336 /* PBXContainerItemProxy */;
+			target = 99314DAB25324699001F6336 /* StreamAMG App */;
+			targetProxy = 99314DC32532469B001F6336 /* PBXContainerItemProxy */;
 		};
-		99314D2325305F27001F6336 /* PBXTargetDependency */ = {
+		99314DCF2532469B001F6336 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 99314D0425305F24001F6336 /* StreamAMG App */;
-			targetProxy = 99314D2225305F27001F6336 /* PBXContainerItemProxy */;
+			target = 99314DAB25324699001F6336 /* StreamAMG App */;
+			targetProxy = 99314DCE2532469B001F6336 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		99314DB525324699001F6336 /* Feed.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99314DB625324699001F6336 /* Base */,
+			);
+			name = Feed.storyboard;
+			sourceTree = "<group>";
+		};
+		99314DBA2532469B001F6336 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99314DBB2532469B001F6336 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		99314D2825305F27001F6336 /* Debug */ = {
+		99314DD42532469B001F6336 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,7 +428,7 @@
 			};
 			name = Debug;
 		};
-		99314D2925305F27001F6336 /* Release */ = {
+		99314DD52532469B001F6336 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -468,16 +483,13 @@
 			};
 			name = Release;
 		};
-		99314D2B25305F27001F6336 /* Debug */ = {
+		99314DD72532469B001F6336 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"StreamAMG App/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "StreamAMG App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,16 +501,13 @@
 			};
 			name = Debug;
 		};
-		99314D2C25305F27001F6336 /* Release */ = {
+		99314DD82532469B001F6336 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"StreamAMG App/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "StreamAMG App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +519,7 @@
 			};
 			name = Release;
 		};
-		99314D2E25305F27001F6336 /* Debug */ = {
+		99314DDA2532469B001F6336 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -531,7 +540,7 @@
 			};
 			name = Debug;
 		};
-		99314D2F25305F27001F6336 /* Release */ = {
+		99314DDB2532469B001F6336 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -552,7 +561,7 @@
 			};
 			name = Release;
 		};
-		99314D3125305F27001F6336 /* Debug */ = {
+		99314DDD2532469B001F6336 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -571,7 +580,7 @@
 			};
 			name = Debug;
 		};
-		99314D3225305F27001F6336 /* Release */ = {
+		99314DDE2532469B001F6336 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -593,43 +602,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		99314D0025305F24001F6336 /* Build configuration list for PBXProject "StreamAMG App" */ = {
+		99314DA725324699001F6336 /* Build configuration list for PBXProject "StreamAMG App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99314D2825305F27001F6336 /* Debug */,
-				99314D2925305F27001F6336 /* Release */,
+				99314DD42532469B001F6336 /* Debug */,
+				99314DD52532469B001F6336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99314D2A25305F27001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG App" */ = {
+		99314DD62532469B001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99314D2B25305F27001F6336 /* Debug */,
-				99314D2C25305F27001F6336 /* Release */,
+				99314DD72532469B001F6336 /* Debug */,
+				99314DD82532469B001F6336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99314D2D25305F27001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppTests" */ = {
+		99314DD92532469B001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99314D2E25305F27001F6336 /* Debug */,
-				99314D2F25305F27001F6336 /* Release */,
+				99314DDA2532469B001F6336 /* Debug */,
+				99314DDB2532469B001F6336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99314D3025305F27001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppUITests" */ = {
+		99314DDC2532469B001F6336 /* Build configuration list for PBXNativeTarget "StreamAMG AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99314D3125305F27001F6336 /* Debug */,
-				99314D3225305F27001F6336 /* Release */,
+				99314DDD2532469B001F6336 /* Debug */,
+				99314DDE2532469B001F6336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 99314CFD25305F24001F6336 /* Project object */;
+	rootObject = 99314DA425324699001F6336 /* Project object */;
 }
