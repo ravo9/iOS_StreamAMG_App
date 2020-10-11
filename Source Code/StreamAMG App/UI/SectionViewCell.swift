@@ -10,6 +10,8 @@ import UIKit
 class SectionViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource,
                                UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet var headerLabel: UILabel!
+    
     @IBOutlet var collectionView: UICollectionView!
     
     var videos = [Video]()
@@ -36,8 +38,9 @@ class SectionViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionVi
         // Configure the view for the selected state
     }
     
-    func configure(with videos: [Video]) {
-        self.videos = videos
+    func configure(with section: Section) {
+        headerLabel.text = section.name
+        self.videos = section.itemData
         collectionView.reloadData()
     }
     
@@ -52,7 +55,7 @@ class SectionViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 250, height: 250)
+        return CGSize(width: 250, height: 214)
     }
     
 }

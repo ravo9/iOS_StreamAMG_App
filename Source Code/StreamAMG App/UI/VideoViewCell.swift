@@ -9,8 +9,9 @@ import UIKit
 
 class VideoViewCell: UICollectionViewCell {
     
-    @IBOutlet var myLabel: UILabel!
-    @IBOutlet var myImageVIew: UIImageView!
+    @IBOutlet var corecategoriesLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var imageView: UIImageView!
     
     static let identifier = "VideoViewCell"
     
@@ -21,11 +22,21 @@ class VideoViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     public func configure(with video: Video) {
-        self.myLabel.text = video.metaData.title
+        self.titleLabel.text = video.metaData.title
+        self.corecategoriesLabel.text = video.metaData.corecategories.joined(separator: " | ")
+        
+        let url = URL(string: video.mediaData.thumbnailUrl)
+
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: url!)
+            // TODO try catch
+            DispatchQueue.main.async {
+                self.imageView.image = UIImage(data: data!)
+            }
+        }
     }
 
 }
