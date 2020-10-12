@@ -23,7 +23,7 @@ class VideoViewCell: UICollectionViewCell {
     
     public func configure(with video: Video) {
         self.titleLabel.text = video.metaData.title
-        let timeToDisplay = formatTimeToDisplay(
+        let timeToDisplay = TimeFormatter().formatTimeToDisplay(
             timeInSeconds: video.metaData.videoDuration
         )
         self.timeLabel.text = timeToDisplay
@@ -38,12 +38,5 @@ class VideoViewCell: UICollectionViewCell {
                 self.imageView.image = UIImage(data: data!)
             }
         }
-    }
-    
-    private func formatTimeToDisplay(timeInSeconds: Int) -> String {
-        let hours = Int(timeInSeconds) / 3600
-        let minutes = Int(timeInSeconds) / 60 % 60
-        let seconds = Int(timeInSeconds) % 60
-        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
 }
