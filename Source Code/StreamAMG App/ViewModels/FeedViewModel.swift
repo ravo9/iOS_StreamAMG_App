@@ -11,13 +11,21 @@ import Foundation
 class FeedViewModel : NSObject {
     
     private var apiClient : APIClient!
+    
     private(set) var videosData : [Section]! {
         didSet {
-            self.bindFeedViewModelToController()
+            self.dataFetchingSuccessHandling()
         }
     }
     
-    var bindFeedViewModelToController : (() -> ()) = {}
+    private(set) var errorState : Error! {
+        didSet {
+            self.dataFetchingErrorHandling()
+        }
+    }
+    
+    var dataFetchingSuccessHandling : (() -> ()) = {}
+    var dataFetchingErrorHandling : (() -> ()) = {}
     
     override init() {
         super.init()
@@ -25,9 +33,26 @@ class FeedViewModel : NSObject {
         getVideos()
     }
     
-    func getVideos() {
-        self.apiClient.getVideos { (videosData) in
-            self.videosData = videosData.sections
+    func refresh() {
+        getVideos()
+    }
+    
+    private func getVideos() {
+        self.apiClient.getVideos(
+            completion: { (videosData) in
+                self.videosData = videosData.sections
+            },
+            errorHandling: { (error) in
+                self.errorState = error
+            }
+        )
+    }
+    
+    func getNumberOfVideos() -> Int {
+        if videosData != nil {
+            return videosData.count
+        } else {
+            return 0
         }
     }
 }

@@ -11,6 +11,7 @@ class VideoViewCell: UICollectionViewCell {
     
     @IBOutlet var corecategoriesLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var timeLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     
     static let identifier = "VideoViewCell"
@@ -19,14 +20,14 @@ class VideoViewCell: UICollectionViewCell {
         return UINib(nibName: "VideoViewCell",
                      bundle: nil)
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
     
     public func configure(with video: Video) {
         self.titleLabel.text = video.metaData.title
-        self.corecategoriesLabel.text = video.metaData.corecategories.joined(separator: " | ")
+        let timeToDisplay = formatTimeToDisplay(
+            timeInSeconds: video.metaData.videoDuration
+        )
+        self.timeLabel.text = timeToDisplay
+        self.corecategoriesLabel.text = video.metaData.corecategories.joined(separator: " | ").uppercased()
         
         let url = URL(string: video.mediaData.thumbnailUrl)
 
@@ -38,5 +39,11 @@ class VideoViewCell: UICollectionViewCell {
             }
         }
     }
-
+    
+    private func formatTimeToDisplay(timeInSeconds: Int) -> String {
+        let hours = Int(timeInSeconds) / 3600
+        let minutes = Int(timeInSeconds) / 60 % 60
+        let seconds = Int(timeInSeconds) % 60
+        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+    }
 }

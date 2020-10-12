@@ -25,17 +25,10 @@ class SectionViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionVi
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         collectionView.register(VideoViewCell.nib(), forCellWithReuseIdentifier: VideoViewCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configure(with section: Section) {

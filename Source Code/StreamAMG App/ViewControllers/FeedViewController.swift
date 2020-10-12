@@ -13,9 +13,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var videoTableView: UITableView!
     
     private var feedViewModel : FeedViewModel!
-    
-    private var items : [Section]!
-    var tempVideos = [Video]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,28 +20,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         videoTableView.register(SectionViewCell.nib(), forCellReuseIdentifier: SectionViewCell.identifier)
         videoTableView.delegate = self
         videoTableView.dataSource = self
-        
-        tempVideos.append(Video(id: "01", mediaData: MediaData(thumbnailUrl: "http"), metaData: MetaData(corecategories: [String](), videoDuration: 12, title: "Fake Title")))
-
-        tempVideos.append(Video(id: "02", mediaData: MediaData(thumbnailUrl: "http"), metaData: MetaData(corecategories: [String](), videoDuration: 22, title: "Fake Title 2")))
-
-        tempVideos.append(Video(id: "03", mediaData: MediaData(thumbnailUrl: "http"), metaData: MetaData(corecategories: [String](), videoDuration: 32, title: "Fake Title 3")))
-        
+       
         callToViewModelForUIUpdate()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if items != nil {
-            return items.count
-        } else {
-            return 0
-        }
+        feedViewModel.getNumberOfVideos()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = videoTableView.dequeueReusableCell(withIdentifier: SectionViewCell.identifier, for: indexPath) as! SectionViewCell
         
-        cell.configure(with: items[indexPath.row])
+        cell.configure(with: feedViewModel.videosData[indexPath.row])
         
         return cell
     }
@@ -55,17 +42,28 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func callToViewModelForUIUpdate(){
         self.feedViewModel =  FeedViewModel()
-        self.feedViewModel.bindFeedViewModelToController = {
+        self.feedViewModel.dataFetchingSuccessHandling = {
             self.updateDataSource()
+        }
+        self.feedViewModel.dataFetchingErrorHandling = {
+            self.displayErrorDialog()
         }
     }
     
     func updateDataSource(){
-        self.items = self.feedViewModel.videosData
-        
         DispatchQueue.main.async {
             self.videoTableView.dataSource = self
             self.videoTableView.reloadData()
+        }
+    }
+    
+    func displayErrorDialog() {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Error", message: "Please try again", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Retry", style: UIAlertAction.Style.default, handler: {_ in
+                self.feedViewModel.refresh()
+            }))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }
