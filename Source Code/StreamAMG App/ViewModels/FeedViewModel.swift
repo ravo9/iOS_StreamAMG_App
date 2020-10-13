@@ -12,13 +12,13 @@ class FeedViewModel : NSObject {
     
     private var apiClient : APIClient!
     
-    private(set) var videosData : [Section]! {
+    var videosData : [Section]! {
         didSet {
             self.dataFetchingSuccessHandling()
         }
     }
     
-    private(set) var errorState : Error! {
+    var errorState : Error! {
         didSet {
             self.dataFetchingErrorHandling()
         }
@@ -27,17 +27,11 @@ class FeedViewModel : NSObject {
     var dataFetchingSuccessHandling : (() -> ()) = {}
     var dataFetchingErrorHandling : (() -> ()) = {}
     
-    override init() {
-        super.init()
-        self.apiClient =  APIClient()
-        getVideos()
+    init(apiClient: APIClient) {
+        self.apiClient = apiClient
     }
     
-    func refresh() {
-        getVideos()
-    }
-    
-    private func getVideos() {
+    func fetchVideos() {
         self.apiClient.getVideos(
             completion: { (videosData) in
                 self.videosData = videosData.sections
@@ -46,6 +40,10 @@ class FeedViewModel : NSObject {
                 self.errorState = error
             }
         )
+    }
+    
+    func refresh() {
+        fetchVideos()
     }
     
     func getNumberOfVideos() -> Int {

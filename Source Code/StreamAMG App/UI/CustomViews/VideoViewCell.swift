@@ -22,7 +22,7 @@ class VideoViewCell: UICollectionViewCell {
     }
     
     public func configure(with video: Video) {
-        self.titleLabel.text = video.metaData.title
+        self.titleLabel.text = video.metaData.title.replacingOccurrences(of: " |", with: ",")
         let timeToDisplay = TimeFormatter().formatTimeToDisplay(
             timeInSeconds: video.metaData.videoDuration
         )

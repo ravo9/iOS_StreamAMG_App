@@ -52,11 +52,6 @@
                BlueprintName = "StreamAMG AppUITests"
                ReferencedContainer = "container:StreamAMG App.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "StreamAMG_AppUITests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

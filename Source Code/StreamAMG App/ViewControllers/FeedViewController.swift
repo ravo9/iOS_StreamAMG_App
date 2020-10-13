@@ -21,33 +21,22 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         videoTableView.delegate = self
         videoTableView.dataSource = self
        
-        callToViewModelForUIUpdate()
+        setupViewModel()
+        fetchVideos()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        feedViewModel.getNumberOfVideos()
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = videoTableView.dequeueReusableCell(withIdentifier: SectionViewCell.identifier, for: indexPath) as! SectionViewCell
-        
-        cell.configure(with: feedViewModel.videosData[indexPath.row])
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 288.0
-    }
-    
-    func callToViewModelForUIUpdate(){
-        self.feedViewModel =  FeedViewModel()
+    func setupViewModel(){
+        self.feedViewModel = FeedViewModel(apiClient: APIClient())
         self.feedViewModel.dataFetchingSuccessHandling = {
             self.updateDataSource()
         }
         self.feedViewModel.dataFetchingErrorHandling = {
             self.displayErrorDialog()
         }
+    }
+    
+    func fetchVideos(){
+        self.feedViewModel.fetchVideos()
     }
     
     func updateDataSource(){
@@ -65,5 +54,23 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }))
             self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    // MARK: - TableView Methods
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        feedViewModel.getNumberOfVideos()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = videoTableView.dequeueReusableCell(withIdentifier: SectionViewCell.identifier, for: indexPath) as! SectionViewCell
+        
+        cell.configure(with: feedViewModel.videosData[indexPath.row])
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 288.0
     }
 }

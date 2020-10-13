@@ -12,13 +12,13 @@
 		99314DB92532469B001F6336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99314DB82532469B001F6336 /* Assets.xcassets */; };
 		99314DBC2532469B001F6336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99314DBA2532469B001F6336 /* LaunchScreen.storyboard */; };
 		99314DC72532469B001F6336 /* TimeFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DC62532469B001F6336 /* TimeFormatterTests.swift */; };
-		99314DD22532469B001F6336 /* StreamAMG_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DD12532469B001F6336 /* StreamAMG_AppUITests.swift */; };
 		99314DF42532488E001F6336 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DF32532488E001F6336 /* ApiClient.swift */; };
 		99314DFC253248B5001F6336 /* GetVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DF9253248B5001F6336 /* GetVideosResponse.swift */; };
 		99314DFD253248B5001F6336 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DFA253248B5001F6336 /* Section.swift */; };
 		99314DFE253248B5001F6336 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314DFB253248B5001F6336 /* Video.swift */; };
 		99314E06253248C4001F6336 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314E03253248C4001F6336 /* FeedViewModel.swift */; };
 		99314E07253248C4001F6336 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314E05253248C4001F6336 /* FeedViewController.swift */; };
+		9961E88F25357F0200A69671 /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961E88E25357F0200A69671 /* FeedViewModelTests.swift */; };
 		999425F025325652003709EE /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999425EE25325652003709EE /* Feed.storyboard */; };
 		999425F9253276CA003709EE /* SectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999425F7253276CA003709EE /* SectionViewCell.swift */; };
 		999425FA253276CA003709EE /* SectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999425F8253276CA003709EE /* SectionViewCell.xib */; };
@@ -55,7 +55,6 @@
 		99314DC62532469B001F6336 /* TimeFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterTests.swift; sourceTree = "<group>"; };
 		99314DC82532469B001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99314DCD2532469B001F6336 /* StreamAMG AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StreamAMG AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99314DD12532469B001F6336 /* StreamAMG_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamAMG_AppUITests.swift; sourceTree = "<group>"; };
 		99314DD32532469B001F6336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99314DF32532488E001F6336 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		99314DF9253248B5001F6336 /* GetVideosResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetVideosResponse.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		99314DFB253248B5001F6336 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		99314E03253248C4001F6336 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		99314E05253248C4001F6336 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9961E88E25357F0200A69671 /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
 		999425EF25325652003709EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		999425F7253276CA003709EE /* SectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewCell.swift; sourceTree = "<group>"; };
 		999425F8253276CA003709EE /* SectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionViewCell.xib; sourceTree = "<group>"; };
@@ -134,6 +134,7 @@
 		99314DC52532469B001F6336 /* StreamAMG AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9961E88D25357EEF00A69671 /* ViewModels */,
 				999BB1462534F5E9001A9774 /* Utils */,
 				99314DC82532469B001F6336 /* Info.plist */,
 			);
@@ -143,7 +144,6 @@
 		99314DD02532469B001F6336 /* StreamAMG AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				99314DD12532469B001F6336 /* StreamAMG_AppUITests.swift */,
 				99314DD32532469B001F6336 /* Info.plist */,
 			);
 			path = "StreamAMG AppUITests";
@@ -190,6 +190,14 @@
 				999426142534898C003709EE /* Storyboards */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		9961E88D25357EEF00A69671 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9961E88E25357F0200A69671 /* FeedViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		999426142534898C003709EE /* Storyboards */ = {
@@ -388,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9961E88F25357F0200A69671 /* FeedViewModelTests.swift in Sources */,
 				99314DC72532469B001F6336 /* TimeFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +405,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99314DD22532469B001F6336 /* StreamAMG_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
